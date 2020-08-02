@@ -19,8 +19,9 @@ class Palla:
         self.canvas.move(self.id, 245, 100)
         # MODIFICA DELLA DIREZIONE PALLA
         starts = [-3, -2, -1, 1, 2, 3, ]
-        random.shuffle(starts)
-        self.x = starts[0]
+        # random.shuffle(starts)
+        # self.x = starts[0]
+        self.x = random.choice(starts)
         self.y = -3
         self.canvas_height = self.canvas.winfo_height()  # CONTROLLA CHE LA PALLA NON ESCA DALLA PARTE ALTA E BASSA
         self.canvas_width = self.canvas.winfo_width()  # CONTROLLA CHE LA PALLA NON ESCA DALLA PARTE DX E SN
